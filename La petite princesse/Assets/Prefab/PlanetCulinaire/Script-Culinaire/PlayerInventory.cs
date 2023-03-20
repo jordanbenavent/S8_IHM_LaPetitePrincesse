@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -12,6 +13,13 @@ public class PlayerInventory : MonoBehaviour
     public void IngredientCollected()
     {
         NumberOfIngredients++;
+        Console.WriteLine("Number of collected ingredients : " + NumberOfIngredients);
+        if (NumberOfIngredients == 4)
+        {
+            Console.WriteLine("All ingredients are collected !");
+        }
         OnIngredientCollected.Invoke(this);
+
+        
     }
 }
