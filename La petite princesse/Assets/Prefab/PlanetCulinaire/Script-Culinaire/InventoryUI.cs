@@ -16,5 +16,9 @@ public class InventoryUI : MonoBehaviour
     public void UpdateIngredientText(PlayerInventory playerInventory)
     {
         IngredientText.text = playerInventory.NumberOfIngredients.ToString();
+        if(playerInventory.NumberOfIngredients == 4)
+        {
+            IngredientText.text = "You have collected all the ingredients !";
+        }
     }
 }
