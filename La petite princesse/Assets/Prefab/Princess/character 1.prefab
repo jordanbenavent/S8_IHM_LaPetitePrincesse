@@ -510,7 +510,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: -170.273, z: 0}
 --- !u!95 &5183131526379752061
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -527,7 +527,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!54 &1622627378566827902
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -543,7 +544,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &1622627378566827901
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -554,7 +555,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.23841129
+  m_Radius: 0.3
   m_Height: 1.4798799
   m_Direction: 1
   m_Center: {x: 0.015691474, y: 0.74620426, z: 0.026157275}
@@ -590,6 +591,7 @@ MonoBehaviour:
   runspeed: 6
   walkspeed: 3
   turnspeed: 160
+  rg: {fileID: 1622627378566827902}
   animator: {fileID: 5183131526379752061}
 --- !u!1 &2326626928542917287
 GameObject:
