@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Chateau.unity
+    guid: 4c94131fcc6ccf546ad532b3ea9c7114
   m_configObjects: {}
