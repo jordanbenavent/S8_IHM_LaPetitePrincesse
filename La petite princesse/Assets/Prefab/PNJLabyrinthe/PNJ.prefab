@@ -58,7 +58,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 996372b23c4544c4f83d2a0ee8b7d44e, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 4f36cbe4666f8bb4495def603265f248, type: 2}
+      objectReference: {fileID: 9100000, guid: 655fb2c2e18d6384f968e7805bfe41af, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 996372b23c4544c4f83d2a0ee8b7d44e, type: 3}
 --- !u!1 &2583947074413032845 stripped
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b316aebff9b533408414cdac7e7c153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTalking: 1
+  isTalking: 0
   animator: {fileID: 9113027612359390541}
 --- !u!95 &9113027612359390541 stripped
 Animator:

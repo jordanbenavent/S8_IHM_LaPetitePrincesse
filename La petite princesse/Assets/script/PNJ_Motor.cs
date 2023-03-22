@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class PNJ_Motor : MonoBehaviour
 {
 
-    public bool isTalking;
+    public bool isTalking = false;
     
     public Animator animator;
 
