@@ -22,7 +22,6 @@ public class PNJ_Motor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isTalking=!isTalking;
-            Debug.Log("E key was pressed." + isTalking);
         }
     }
 }

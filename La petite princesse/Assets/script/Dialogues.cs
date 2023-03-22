@@ -12,6 +12,7 @@ public class Dialogues : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI[] lines;
     public float textSpeed;
+    private bool EndDialogue = false;
     private bool noTalked;
     private bool talking;
 
@@ -52,7 +53,6 @@ public class Dialogues : MonoBehaviour
         {   
             double  minDist=2.5;
             float dist = Vector3. Distance(player.transform.position, pnj.transform.position);
-            Debug.Log(dist + "distance");
             if(dist < minDist)
             {
                 myCanvas.enabled = true;
@@ -74,7 +74,7 @@ public class Dialogues : MonoBehaviour
 
 
     public bool IsFinished(){
-        return index >= lines.Length;
+        return EndDialogue;//index >= lines.Length;
     }
 
     public void newDialague() // Get keyboard inputs
@@ -82,6 +82,7 @@ public class Dialogues : MonoBehaviour
         index++;
         if(index >= lines.Length){
             myCanvas.enabled = false;
+            EndDialogue = true;
             index = 0;
         } else {
             StartCoroutine(TypeLine());

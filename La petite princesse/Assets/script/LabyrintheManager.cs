@@ -7,8 +7,11 @@ public class LabyrintheManager : MonoBehaviour
     public Canvas myCanvas;
     public Dialogues Dialogues;
     public GameObject player;
+    public GameObject startDoor;
     public List<CheckPointLabyrinthe> CheckPoints;
     private bool labStart = false;
+    private bool closedDoor = true;
+    private float angle = 90;
 
     void Start()
     {
@@ -19,7 +22,9 @@ public class LabyrintheManager : MonoBehaviour
 
     void FixedUpdate()
     {
-       
+       if(Dialogues.IsFinished() && closedDoor){
+        OpenDoor();
+       }
     }
 
     private void ListenCheckpoints(bool subscribe)
@@ -39,7 +44,6 @@ public class LabyrintheManager : MonoBehaviour
             Debug.Log("laby pas commencé");
             return;
         }
-
         if(checkpointNumber == 0){
             labStart = true;
         }
@@ -48,5 +52,11 @@ public class LabyrintheManager : MonoBehaviour
             Debug.Log("Bravo !");
             return;
         }
+    }
+
+    private void OpenDoor(){
+        startDoor.transform.Rotate(0, angle , 0, Space.Self);
+        angle = 0;
+        closedDoor = false;
     }
 }
