@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class menuManager : MonoBehaviour
 {
-
+    public int number;
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Labyrinthe");
-        SceneManager.LoadScene(1); //Labyrinthe
+        SceneManager.LoadScene(number); //Labyrinthe
     }
 
 }
