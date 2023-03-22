@@ -22,6 +22,7 @@ public class Dialogues : MonoBehaviour
         textComponent.text = string.Empty;
         noTalked = true;
         talking = false;
+        myCanvas.enabled = false;
     }
 
     // Update is called once per frame
