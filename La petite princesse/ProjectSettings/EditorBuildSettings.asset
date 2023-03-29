@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Mus\xE9e.unity"
     guid: dd1d60431ea164236a5e91d124f8b497
+  - enabled: 1
+    path: Assets/Scenes/PlanetCulinaireDEV.unity
+    guid: 08507c6b3cd8cc541817964c94caecb4
   m_configObjects: {}

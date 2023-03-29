@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using TMPro;
 
@@ -22,9 +23,9 @@ public class Win : MonoBehaviour
             StartCoroutine(DisplayTextForTwoSeconds());
         }
         //You win
-        //menuManager mM = FindObjectOfType<menuManager>();
-        //mM.giveCarTrophy();
-        //SceneManager.LoadScene(0);
+        menuManager mM = FindObjectOfType<menuManager>();
+        mM.givePizzaTrophy();
+        SceneManager.LoadScene(0);  
     }
 
     private IEnumerator DisplayTextForTwoSeconds()
