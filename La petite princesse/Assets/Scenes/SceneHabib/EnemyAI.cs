@@ -20,6 +20,7 @@ public class EnemyAI : MonoBehaviour
     public Animator animator;
     public Collider collider;
     private bool isOnRange=false;
+    public PlayerInteraction playerInteraction;
 
     void Start()
     { 
@@ -71,6 +72,7 @@ public class EnemyAI : MonoBehaviour
                     agent.destination = AI.position;
                     transform.LookAt(priorityTarget);
                     animator.Play("attack");
+                    playerInteraction.healthBarre -= 10;
                     animator.SetBool("isAttacking", true);
                     animator.SetBool("isMoving", false);
                     isAttacking = true;
