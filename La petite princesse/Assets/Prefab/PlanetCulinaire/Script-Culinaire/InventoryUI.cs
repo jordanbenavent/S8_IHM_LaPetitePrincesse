@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 public class InventoryUI : MonoBehaviour
@@ -15,8 +16,8 @@ public class InventoryUI : MonoBehaviour
 
     public void UpdateIngredientText(PlayerInventory playerInventory)
     {
-        IngredientText.text = playerInventory.NumberOfIngredients.ToString();
-        if(playerInventory.NumberOfIngredients == 4)
+        IngredientText.text = playerInventory.NumberOfIngredients.ToString()+"/7";
+        if(playerInventory.NumberOfIngredients == 7)
         {
             IngredientText.text = "You have collected all the ingredients !";
         }

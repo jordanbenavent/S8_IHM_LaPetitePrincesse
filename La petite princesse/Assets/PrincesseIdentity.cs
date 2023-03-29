@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PrincesseIdentity : MonoBehaviour
 {
-    private string name = "Princesse";
+    //private string name = "Princesse";
 
     public string GetName(){
         return name;

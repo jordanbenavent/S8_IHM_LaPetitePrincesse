@@ -10,6 +10,7 @@ public class PlayerMotor : MonoBehaviour
     public float runspeed;
     public float walkspeed;
     public float turnspeed;
+    public Rigidbody rg;
 
     public Animator animator;
 
@@ -39,29 +40,35 @@ public class PlayerMotor : MonoBehaviour
            
             if (walkValue > 0.4)
             {
-                transform.Translate(0, 0, runspeed * Time.deltaTime);
+                rg.MovePosition(transform.position + transform.forward * runspeed * Time.deltaTime);
+                //transform.Translate(0, 0, runspeed * Time.deltaTime);
             }
             if (walkValue < -0.4)
             {
-                transform.Translate(0, 0, -(runspeed / 2) * Time.deltaTime);
+                rg.MovePosition(transform.position + transform.forward * -(runspeed / 2) * Time.deltaTime);
+                //transform.Translate(0, 0, -(runspeed / 2) * Time.deltaTime);
             }
         }
         if (walkValue > 0.4 & runValue < 0.4)
         {
-            transform.Translate(0, 0, walkspeed * Time.deltaTime);
+            rg.MovePosition(transform.position + transform.forward * walkspeed * Time.deltaTime);
+            //transform.Translate(0, 0, walkspeed * Time.deltaTime);
         }
         if (walkValue < -0.4 & runValue < 0.4)
         {
-            transform.Translate(0, 0, -(walkspeed / 2) * Time.deltaTime);
+            rg.MovePosition(transform.position + transform.forward * -(walkspeed / 2) * Time.deltaTime);
+            //transform.Translate(0, 0, -(walkspeed / 2) * Time.deltaTime);
         }
 
         if (turnValue > 0.4)
         {
-            transform.Rotate(0, turnspeed * Time.deltaTime, 0);
+            rg.MoveRotation(transform.rotation * Quaternion.Euler(0, turnspeed * Time.deltaTime, 0));
+            //transform.Rotate(0, turnspeed * Time.deltaTime, 0);
         }
         if (turnValue < -0.4)
         {
-            transform.Rotate(0, -turnspeed * Time.deltaTime, 0);
+            rg.MoveRotation(transform.rotation * Quaternion.Euler(0, -turnspeed * Time.deltaTime, 0));
+            //transform.Rotate(0, -turnspeed * Time.deltaTime, 0);
         }
 
     }  

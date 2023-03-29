@@ -6,7 +6,6 @@ public class CheckPointLabyrinthe : MonoBehaviour
     public UnityEvent<PrincesseIdentity, CheckPointLabyrinthe> onCheckpointEnter;
     void OnTriggerEnter(Collider collider)
     {
-        Debug.Log("ici");
         // if entering object is tagged as the Player
         PrincesseIdentity princesse = collider.gameObject.GetComponent<PrincesseIdentity>();
         if (princesse != null)
