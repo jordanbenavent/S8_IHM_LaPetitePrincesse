@@ -15,7 +15,7 @@ public class InventoryTomatoUI : MonoBehaviour
 
     public void UpdateTomatoText(Inventory playerInventory)
     {
-        TomatoText.text = playerInventory.NumberOfTomato.ToString() + "/1";
+        TomatoText.text = playerInventory.NumberOfTomato.ToString() + "/2";
         /*if (playerInventory.NumberOfTomato == 1)
         {
             TomatoText.enabled = false;
