@@ -8,9 +8,11 @@ public class LabyrintheManager : MonoBehaviour
     public Dialogues Dialogues;
     public GameObject player;
     public GameObject startDoor;
+    public GameObject endDoor;
     public List<CheckPointLabyrinthe> CheckPoints;
     private bool labStart = false;
     private bool closedDoor = true;
+    private bool endDoorOpen = false;
     private float angle = 90;
 
     void Start()
@@ -23,7 +25,7 @@ public class LabyrintheManager : MonoBehaviour
     void FixedUpdate()
     {
        if(Dialogues.IsFinished() && closedDoor){
-        OpenDoor();
+        OpenDoor(startDoor);
        }
     }
 
@@ -36,7 +38,7 @@ public class LabyrintheManager : MonoBehaviour
         }
     }
 
-    public void CheckpointActivated(PrincesseIdentity car, CheckPointLabyrinthe checkpoint)
+    public void CheckpointActivated(PrincesseIdentity p, CheckPointLabyrinthe checkpoint)
     {
         int checkpointNumber = CheckPoints.IndexOf(checkpoint);
         Debug.Log(checkpointNumber);
@@ -50,6 +52,9 @@ public class LabyrintheManager : MonoBehaviour
 
         if(checkpointNumber == 1 && labStart){
             Debug.Log("Bravo !");
+            if(!endDoorOpen){
+                OpenDoor(endDoor);
+            }
             return;
         }
     }
@@ -57,6 +62,11 @@ public class LabyrintheManager : MonoBehaviour
     private void OpenDoor(){
         startDoor.transform.Rotate(0, angle , 0, Space.Self);
         angle = 0;
+        closedDoor = false;
+    }
+
+    private void OpenDoor(GameObject door){
+        door.transform.Rotate(0, angle , 0, Space.Self);
         closedDoor = false;
     }
 }

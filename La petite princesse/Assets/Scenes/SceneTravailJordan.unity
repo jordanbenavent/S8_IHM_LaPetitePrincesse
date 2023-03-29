@@ -436,6 +436,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349728926}
   m_CullTransparentMesh: 1
+--- !u!1 &409185293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7220385514074953151, guid: 1801e4e581a23f742a84f8fad0d24f1a, type: 3}
+  m_PrefabInstance: {fileID: 1127685351}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &425809818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,8 +1262,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCanvas: {fileID: 152942242}
   Dialogues: {fileID: 349728928}
-  player: {fileID: 0}
+  player: {fileID: 512501554}
   startDoor: {fileID: 1559941211}
+  endDoor: {fileID: 409185293}
   CheckPoints:
   - {fileID: 1116955385}
   - {fileID: 124921586}

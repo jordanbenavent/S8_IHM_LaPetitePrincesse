@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 using TMPro;
 
 public class Win : MonoBehaviour
@@ -15,9 +16,20 @@ public class Win : MonoBehaviour
 
     public void UpdateWinText(Inventory playerInventory)
     {
-        if (playerInventory.NumberOfIngredients == 7)
+        if (playerInventory.NumberOfIngredients == 9)
         {
             WinText.text = "You have all the ingredients for the pizza !!";
+            StartCoroutine(DisplayTextForTwoSeconds());
         }
+        //You win
+        //menuManager mM = FindObjectOfType<menuManager>();
+        //mM.giveCarTrophy();
+        //SceneManager.LoadScene(0);
+    }
+
+    private IEnumerator DisplayTextForTwoSeconds()
+    {
+        yield return new WaitForSeconds(2f);
+        WinText.text = "";
     }
 }
