@@ -16,7 +16,7 @@ public class Win : MonoBehaviour
 
     public void UpdateWinText(Inventory playerInventory)
     {
-        if (playerInventory.NumberOfIngredients == 1)
+        if (playerInventory.NumberOfIngredients == 9)
         {
             WinText.text = "You have all the ingredients for the pizza !!";
             StartCoroutine(DisplayTextForTwoSeconds());
