@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.11703703, g: 0.11958738, b: 0.10148852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,93 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1059324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1622627376719996070, guid: a5fcfc8faa5e9354fb975decd20c152b, type: 3}
+  m_PrefabInstance: {fileID: 625346021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1059325 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1622627376719996059, guid: a5fcfc8faa5e9354fb975decd20c152b, type: 3}
+  m_PrefabInstance: {fileID: 625346021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1059326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: a372111d3ec70d043ba8f14e9cfcfc14, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 1
+--- !u!114 &1059327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1059325}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &103621980
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +514,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1622627376719996068, guid: a5fcfc8faa5e9354fb975decd20c152b, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622627376719996068, guid: a5fcfc8faa5e9354fb975decd20c152b, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.21698111
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622627376719996068, guid: a5fcfc8faa5e9354fb975decd20c152b, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622627376719996068, guid: a5fcfc8faa5e9354fb975decd20c152b, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.066977225
+      objectReference: {fileID: 0}
     - target: {fileID: 1622627378566827890, guid: a5fcfc8faa5e9354fb975decd20c152b, type: 3}
       propertyPath: m_AnimatePhysics
       value: 1
@@ -525,6 +628,7 @@ MonoBehaviour:
   Dialogues: {fileID: 1836595271}
   player: {fileID: 625346022}
   startDoor: {fileID: 1072123651}
+  endDoor: {fileID: 0}
   CheckPoints:
   - {fileID: 128942836}
   - {fileID: 1709475347}
@@ -732,14 +836,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915734480}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.3632267, y: -0.7906969, z: -0.2160384, w: 0.44293585}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.139, y: -120.956, z: -49.99}
 --- !u!1001 &986565731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,7 +1012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709475346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.6, y: 5.82, z: 115.81}
+  m_LocalPosition: {x: 60.6, y: 5.82, z: 113.04}
   m_LocalScale: {x: 6.6625, y: 2.6375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

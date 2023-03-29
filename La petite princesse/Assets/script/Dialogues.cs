@@ -51,7 +51,7 @@ public class Dialogues : MonoBehaviour
         // Si l'utilisateur appuie sur la touche "Echap", cacher le canvas
         if (Input.GetKeyDown(KeyCode.E) && noTalked)
         {   
-            double  minDist=2.5;
+            double  minDist=3;
             float dist = Vector3. Distance(player.transform.position, pnj.transform.position);
             if(dist < minDist)
             {
