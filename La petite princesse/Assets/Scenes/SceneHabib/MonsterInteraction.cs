@@ -6,6 +6,7 @@ public class MonsterInteraction : MonoBehaviour
 {
     public float oldHealthBarre;
     public float healthBarre;
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +19,13 @@ public class MonsterInteraction : MonoBehaviour
     {
         if(oldHealthBarre != healthBarre)
         {
-            Debug.Log("Grrrrrrrrrrrrrrr");
+            anim.Play("Damage");
             oldHealthBarre=healthBarre; 
         }
+        if (healthBarre <= 0)
+        {
+            anim.Play("Damage");
+            Destroy(gameObject);        }
     }
 
 
