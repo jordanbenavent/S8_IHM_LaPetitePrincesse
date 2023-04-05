@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Mus\xE9e.unity"
     guid: dd1d60431ea164236a5e91d124f8b497
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: bab0b8e7d527e974ab77c17cf58cd01c
   m_configObjects: {}
