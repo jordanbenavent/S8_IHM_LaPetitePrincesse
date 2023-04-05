@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using TMPro;
 
@@ -20,11 +21,12 @@ public class Win : MonoBehaviour
         {
             WinText.text = "You have all the ingredients for the pizza !!";
             StartCoroutine(DisplayTextForTwoSeconds());
+            //You win
+            menuManager mM = FindObjectOfType<menuManager>();
+            mM.givePizzaTrophy();
+            SceneManager.LoadScene(0);
         }
-        //You win
-        //menuManager mM = FindObjectOfType<menuManager>();
-        //mM.giveCarTrophy();
-        //SceneManager.LoadScene(0);
+        
     }
 
     private IEnumerator DisplayTextForTwoSeconds()
