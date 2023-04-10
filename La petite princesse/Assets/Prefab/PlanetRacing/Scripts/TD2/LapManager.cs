@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class LapManager : MonoBehaviour
 {
@@ -66,6 +67,11 @@ public class LapManager : MonoBehaviour
                         // TODO : create attribute divername in CarIdentity 
                         Debug.Log(player.identity.nameCar + " won");
                         ui.UpdateLapText(player.identity.nameCar + " won");
+
+                        //You win
+                        menuManager mM = FindObjectOfType<menuManager>();
+                        mM.giveCarTrophy();
+                        SceneManager.LoadScene(0);
                     }
                     else if (player == mainPlayerRank) // display player rank if not winner
                     {

@@ -15,7 +15,7 @@ public class InventoryEggUI : MonoBehaviour
 
     public void UpdateEggText(Inventory playerInventory)
     {
-        EggText.text = playerInventory.NumberOfEggs.ToString() + "/1";
+        EggText.text = playerInventory.NumberOfEggs.ToString() + "/2";
        
     }
 }

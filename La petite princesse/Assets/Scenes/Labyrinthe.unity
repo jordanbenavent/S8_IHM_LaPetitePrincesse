@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11703703, g: 0.11958738, b: 0.10148852, a: 1}
+  m_IndirectSpecularColor: {r: 0.1732154, g: 0.21650481, b: 0.29853696, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -210,6 +210,11 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!1 &7644256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7220385514074953151, guid: 1801e4e581a23f742a84f8fad0d24f1a, type: 3}
+  m_PrefabInstance: {fileID: 986565731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &103621980
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +633,7 @@ MonoBehaviour:
   Dialogues: {fileID: 1836595271}
   player: {fileID: 625346022}
   startDoor: {fileID: 1072123651}
-  endDoor: {fileID: 0}
+  endDoor: {fileID: 7644256}
   CheckPoints:
   - {fileID: 128942836}
   - {fileID: 1709475347}
@@ -779,7 +784,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -836,14 +841,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915734480}
-  m_LocalRotation: {x: 0.3632267, y: -0.7906969, z: -0.2160384, w: 0.44293585}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.504449, y: -0.4145257, z: 0.48112637, w: -0.58499324}
+  m_LocalPosition: {x: 48.1, y: 85.6, z: 11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -1.139, y: -120.956, z: -49.99}
+  m_LocalEulerAnglesHint: {x: 81.524, y: -360.162, z: -79.011}
 --- !u!1001 &986565731
 PrefabInstance:
   m_ObjectHideFlags: 0
