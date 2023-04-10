@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.UI.Image;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class PlayerInteraction : MonoBehaviour
     public bool isAttacking;
     public Image hp;
     public Image mana;
+    public GameObject reproductible;
+    public Transform spawn;
+    public Transform parent;
 
     public float spellSpeed;
     public GameObject spellGO;
@@ -25,10 +29,14 @@ public class PlayerInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    
+        transform.position = spawn.position;
         oldTime=Time.time;
         oldHealthBarre = healthBarre;
         isAttacking = false;
         departureSpell.SetActive(false);
+        healthBarre = maxHealth;
+        ManaBarre = maxMana;
 
     }
 
@@ -38,7 +46,10 @@ public class PlayerInteraction : MonoBehaviour
 
         if (healthBarre <= 0)
         {
-            Debug.Log("You are dead");
+            Instantiate(reproductible,parent,false);
+            Destroy(gameObject);
+
+
         }
         if (Time.time - oldTime > 2 & ManaBarre <= maxMana-2) 
         {

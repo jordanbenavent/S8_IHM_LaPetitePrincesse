@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ingredient
   - Monster
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -22,6 +22,12 @@ public class SpellColision : MonoBehaviour
             collision.gameObject.GetComponent<MonsterInteraction>().applyDmg(dmg);
             Destroy(gameObject);
         }
-        
+        if (collision.gameObject.tag == "Boss")
+        {
+            Debug.Log("je suis le sort");
+            collision.gameObject.GetComponent<BossInteraction>().applyDmg(dmg);
+            Destroy(gameObject);
+        }
+
     }
 }
