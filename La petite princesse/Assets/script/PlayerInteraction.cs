@@ -46,7 +46,8 @@ public class PlayerInteraction : MonoBehaviour
 
         if (healthBarre <= 0)
         {
-            Instantiate(reproductible,parent,false);
+            GameObject instanciate = Instantiate(reproductible,parent,false); 
+            instanciate.name = "character 1";
             Destroy(gameObject);
 
 
@@ -68,7 +69,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         if (healthBarre != oldHealthBarre)
         {
-            Debug.Log(healthBarre);
+            //Debug.Log(healthBarre);
             animator.Play("hit");
             oldHealthBarre=healthBarre;
         }

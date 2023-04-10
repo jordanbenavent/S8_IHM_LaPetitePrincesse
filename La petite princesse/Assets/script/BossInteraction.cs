@@ -45,4 +45,8 @@ public class BossInteraction : MonoBehaviour
     {
         healthBarre -= dmg;
     }
+
+    public bool IsDead(){
+        return healthBarre <= 0;
+    }
 }

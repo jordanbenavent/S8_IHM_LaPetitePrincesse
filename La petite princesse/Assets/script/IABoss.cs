@@ -1,6 +1,7 @@
+using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.AI;
 
 public class IABoss : MonoBehaviour
@@ -52,6 +53,16 @@ public class IABoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(playerInteraction == null){
+            try {
+                playerInteraction = GameObject.Find("character 1").GetComponent<PlayerInteraction>();
+            } 
+            catch (Exception e)
+            {
+
+            }
+        }
+
         if (isDead == false) {
             if (priorityTarget != null)
             {

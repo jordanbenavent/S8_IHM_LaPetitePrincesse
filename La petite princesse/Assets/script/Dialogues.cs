@@ -34,14 +34,14 @@ public class Dialogues : MonoBehaviour
 
     public void StartDialogue(){
         index = 0;
-        StartCoroutine(TypeLine());
+        TypeLine();
     }
 
-    IEnumerator TypeLine(){
+    void TypeLine(){
         textComponent.text = string.Empty;
         foreach(char c in lines[index].text.ToCharArray()){
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            //yield return new WaitForSeconds(textSpeed);
         }
     }
 
@@ -85,7 +85,7 @@ public class Dialogues : MonoBehaviour
             EndDialogue = true;
             index = 0;
         } else {
-            StartCoroutine(TypeLine());
+            TypeLine();
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class LabyrintheManager : MonoBehaviour
@@ -7,6 +8,8 @@ public class LabyrintheManager : MonoBehaviour
     public Canvas myCanvas;
     public Dialogues Dialogues;
     public GameObject player;
+    public Transform parent;
+    public GameObject princesseWithPower;
     public GameObject startDoor;
     public GameObject endDoor;
     public List<CheckPointLabyrinthe> CheckPoints;
@@ -15,17 +18,28 @@ public class LabyrintheManager : MonoBehaviour
     private bool endDoorOpen = false;
     private float angle = 90;
 
+    public SceneLoader SceneLoader;
+    public BossInteraction boss;
+
     void Start()
     {
         // Cacher le canvas au démarrage
         myCanvas.enabled = false;
+        princesseWithPower.SetActive(false);
+        //Destroy(princesseWithPower);
         ListenCheckpoints(true);
     }
 
     void FixedUpdate()
     {
        if(Dialogues.IsFinished() && closedDoor){
-        OpenDoor(startDoor);
+        OpenDoor();
+       }
+
+       if(boss.IsDead()){
+        menuManager mM = FindObjectOfType<menuManager>();
+        mM.giveMinotaureTrophy();
+        SceneManager.LoadScene(0);
        }
     }
 
@@ -61,8 +75,10 @@ public class LabyrintheManager : MonoBehaviour
 
     private void OpenDoor(){
         startDoor.transform.Rotate(0, angle , 0, Space.Self);
-        angle = 0;
         closedDoor = false;
+        princesseWithPower.SetActive(true);
+        player.SetActive(false);
+        player = princesseWithPower;
     }
 
     private void OpenDoor(GameObject door){
