@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class TimeSlowdown : MonoBehaviour
@@ -14,7 +15,7 @@ public class TimeSlowdown : MonoBehaviour
 
     private void Update()
     {
-        if(trophyFound){
+        if (trophyFound){
             // Calculate the distance between the player and the trophy
             float distance = Vector3.Distance(playerTransform.position, trophyTransform.position);
 

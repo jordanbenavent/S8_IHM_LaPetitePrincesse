@@ -42,7 +42,7 @@ public class CloudGenerator : MonoBehaviour
     void HandleGameEnding(){
         menuManager mM = FindObjectOfType<menuManager>();
         mM.giveCloudTrophy();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Debug.Log("Done !");
     }
 }
