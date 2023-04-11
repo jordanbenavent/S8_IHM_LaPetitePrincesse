@@ -9,6 +9,10 @@ public class menuLoad : MonoBehaviour
     public GameObject cloudTrophy;
     public GameObject pizzaTrophy;
     public GameObject minotaureTrophy;
+    public GameObject carCarpet;
+    public GameObject cloudCarpet;
+    public GameObject pizzaCarpet;
+    public GameObject minotaureCarpet;
 
     public GameObject cadreMusee;
     public GameObject cadreMuseePhoto;
@@ -22,6 +26,11 @@ public class menuLoad : MonoBehaviour
         pizzaTrophy.SetActive(false);
         minotaureTrophy.SetActive(false);
 
+        carCarpet.SetActive(false);
+        cloudCarpet.SetActive(false);
+        pizzaCarpet.SetActive(false);
+        minotaureCarpet.SetActive(false);
+
         cadreMusee.SetActive(false);
         cadreMuseePhoto.SetActive(false);
 
@@ -32,13 +41,15 @@ public class menuLoad : MonoBehaviour
         if(mM.haveCarTrophy())
         {
             carTrophy.SetActive(true);
+            carCarpet.SetActive(true);
         }
 
         //cloudTrophy
 
         if (mM.haveCloudTrophy())
         {
-            carTrophy.SetActive(true);
+            cloudTrophy.SetActive(true);
+            cloudCarpet.SetActive(true);
         }
 
         //carTrophy
@@ -46,13 +57,15 @@ public class menuLoad : MonoBehaviour
         if (mM.havePizzaTrophy())
         {
             pizzaTrophy.SetActive(true);
+            pizzaCarpet.SetActive(true);
         }
 
         //carTrophy
-      
+
         if (mM.haveMinotaureTrophy())
         {
             minotaureTrophy.SetActive(true);
+            minotaureCarpet.SetActive(true);
         }
 
 

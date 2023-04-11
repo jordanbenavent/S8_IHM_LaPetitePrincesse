@@ -54,7 +54,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         if (Time.time - oldTime > 2 & ManaBarre <= maxMana-2) 
         {
-            ManaBarre += 2;
+            ManaBarre += 5;
             oldTime = Time.time;
         }
         float percentageHp = ((healthBarre * 100) / maxHealth) / 100;
