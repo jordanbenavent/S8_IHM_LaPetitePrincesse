@@ -15,4 +15,9 @@ public class CloudCollider : MonoBehaviour
             Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
         }
     }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }

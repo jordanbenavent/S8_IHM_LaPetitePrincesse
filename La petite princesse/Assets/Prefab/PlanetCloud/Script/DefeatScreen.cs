@@ -28,6 +28,7 @@ public class DefeatScreen : MonoBehaviour {
     {
         gameObject.SetActive(false);
         PlayerMovement.PlayerOutOfScreen += OnPlayerOutOfScreen;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
      void Update()

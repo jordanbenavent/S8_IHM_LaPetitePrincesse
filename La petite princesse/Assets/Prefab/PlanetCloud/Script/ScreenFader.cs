@@ -4,11 +4,11 @@ using System.Collections;
 
 public class ScreenFader : MonoBehaviour
 {
-    public Image fadeImage;
-    public float fadeDuration = 1f;
+    public float fadeDuration = 0.4f;
 
     private float fadeStartTime;
     private bool isFading;
+    private Image fadeImage;
 
     public static event System.Action OnFadeComplete;
 
@@ -43,6 +43,7 @@ public class ScreenFader : MonoBehaviour
             if (t >= 1f)
             {
                 isFading = false;
+                Debug.Log("Condition met.");
                 OnFadeComplete?.Invoke();
             }
 
