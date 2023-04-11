@@ -1,9 +1,9 @@
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEditor.SceneManagement;
-using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -48,7 +48,16 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(isOnRange);
+        if(playerInteraction == null){
+            try {
+                playerInteraction = GameObject.Find("character 1").GetComponent<PlayerInteraction>();
+            } 
+            catch (Exception e)
+            {
+
+            }
+        }
+        //Debug.Log(isOnRange);
         if (priorityTarget != null)
         {
             isOnRange = true;

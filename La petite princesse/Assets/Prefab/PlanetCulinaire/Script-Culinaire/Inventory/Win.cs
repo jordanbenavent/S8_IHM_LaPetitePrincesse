@@ -24,7 +24,7 @@ public class Win : MonoBehaviour
             //You win
             menuManager mM = FindObjectOfType<menuManager>();
             mM.givePizzaTrophy();
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         
     }

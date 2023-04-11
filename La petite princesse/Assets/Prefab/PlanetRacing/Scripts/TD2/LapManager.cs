@@ -68,15 +68,21 @@ public class LapManager : MonoBehaviour
                         Debug.Log(player.identity.nameCar + " won");
                         ui.UpdateLapText(player.identity.nameCar + " won");
 
+                        if (player == mainPlayerRank)
+                        {                            
                         //You win
                         menuManager mM = FindObjectOfType<menuManager>();
                         mM.giveCarTrophy();
-                        SceneManager.LoadScene(0);
+                        SceneManager.LoadScene(1);
+                        }
+
                     }
                     else if (player == mainPlayerRank) // display player rank if not winner
                     {
                         ui.UpdateLapText("\nYou finished in " + mainPlayerRank.rank + " place");
-                        SceneLoader.LoadMenu();
+
+                        //You lose
+                        SceneManager.LoadScene(1);
                     }
 
                     if (player == mainPlayerRank) onPlayerFinished.Invoke();

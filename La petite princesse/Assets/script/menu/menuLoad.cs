@@ -11,6 +11,7 @@ public class menuLoad : MonoBehaviour
     public GameObject minotaureTrophy;
 
     public GameObject cadreMusee;
+    public GameObject cadreMuseePhoto;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class menuLoad : MonoBehaviour
         minotaureTrophy.SetActive(false);
 
         cadreMusee.SetActive(false);
+        cadreMuseePhoto.SetActive(false);
 
         //carTrophy
 
@@ -54,12 +56,15 @@ public class menuLoad : MonoBehaviour
         }
 
 
-        if (mM.haveCarTrophy() 
-            && mM.haveCloudTrophy() 
-            && mM.havePizzaTrophy() 
+        if (mM.haveCarTrophy()
+            && mM.haveCloudTrophy()
+            && mM.havePizzaTrophy()
             && mM.haveMinotaureTrophy())
+        {
             cadreMusee.SetActive(true);
-    }
+            cadreMuseePhoto.SetActive(true);
+        }
+    } 
 
     // Update is called once per frame
     void Update()

@@ -8,6 +8,7 @@ TagManager:
   - Monster
   - CanvasTag
   - trophyTag
+  - Boss
   layers:
   - Default
   - TransparentFX
