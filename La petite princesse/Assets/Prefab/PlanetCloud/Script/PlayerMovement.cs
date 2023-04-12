@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         walkValue = Input.GetAxis("Horizontal");
+        Debug.Log("CloudWalk: " + walkValue);
         isGrounded = rb.velocity.y <= 0 && Physics.Raycast(transform.position, Vector3.down, out hit, 0.5f, layerMask);
         // check if the player is grounded
         if(!isGrounded){

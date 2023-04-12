@@ -59,6 +59,8 @@ public class CloudGenerator : MonoBehaviour
         Debug.Log("Event reached.");
         menuManager mM = FindObjectOfType<menuManager>();
         mM.giveCloudTrophy();
+        Time.timeScale = 1f;
+        Time.fixedDeltaTime = 0.02f;
         SceneManager.LoadScene(1);
         Debug.Log("Done !");
     }

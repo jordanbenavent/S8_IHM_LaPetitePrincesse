@@ -7,7 +7,6 @@ using TMPro;
 
 public class DefeatScreen : MonoBehaviour {
     private bool isDefeatScreenActive = false;
-    public Transform player;
 
     private static bool instantiated = false;
 
