@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LapManager : MonoBehaviour
 {
     public List<Checkpoint> checkpoints;
-    public int totalLaps = 3;
+    public int totalLaps = 1;
     public UIManager ui;
 
     private List<PlayerRank> playerRanks = new List<PlayerRank>();
@@ -73,7 +73,7 @@ public class LapManager : MonoBehaviour
                         //You win
                         menuManager mM = FindObjectOfType<menuManager>();
                         mM.giveCarTrophy();
-                        SceneManager.LoadScene(1);
+                        SceneManager.LoadScene(0);
                         }
 
                     }
@@ -82,7 +82,7 @@ public class LapManager : MonoBehaviour
                         ui.UpdateLapText("\nYou finished in " + mainPlayerRank.rank + " place");
 
                         //You lose
-                        SceneManager.LoadScene(1);
+                        SceneManager.LoadScene(0);
                     }
 
                     if (player == mainPlayerRank) onPlayerFinished.Invoke();

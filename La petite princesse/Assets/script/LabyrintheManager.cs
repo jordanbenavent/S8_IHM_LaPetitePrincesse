@@ -39,7 +39,7 @@ public class LabyrintheManager : MonoBehaviour
        if(boss.IsDead()){
         menuManager mM = FindObjectOfType<menuManager>();
         mM.giveMinotaureTrophy();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
        }
     }
 

@@ -61,7 +61,7 @@ public class CloudGenerator : MonoBehaviour
         mM.giveCloudTrophy();
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
         Debug.Log("Done !");
     }
 }
