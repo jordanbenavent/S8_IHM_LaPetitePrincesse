@@ -58,5 +58,5 @@ On retrouve sur cette planète un temple romain, une fois à l'intérieur, on pe
 ### Planète du "Musée de la Forme et du Mouvement"
 - Greek Low Poly Pack - Lite : https://assetstore.unity.com/packages/3d/environments/historic/greek-low-poly-pack-lite-136606
 
-### Planète Culinaire
+### Planète "Culinaire"
 - Village : https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410
