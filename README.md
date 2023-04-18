@@ -22,12 +22,11 @@ Nous avons réutilisé la course du TD : il suffit d'utiliser les touches Z, Q, 
 <img src="https://github.com/jordanbenavent/S8_IHM_LaPetitePrincesse/blob/main/La%20petite%20princesse/Assets/Prefab/Emile/cadreCulinaire.png" width="200">
 </p>
 
-Le but du jeu de la planète culinaire consiste à aider le boulanger représenté par le PNJ à cuisinier sa pizza au quatre fromages, ce dernier explique tout cela
+Le but du jeu de la planète culinaire consiste à aider le boulanger représenté par le PNJ à cuisinier sa pizza aux quatre fromages. Ce dernier explique tout cela
 au joueur quand il décide de lui parler.
 Pour cela il faudra collecter des oeufs, de la farine, des tomates ainsi que du fromage qui sont éparpillés un peu partout dans le village ! 
-Il faut bien chercher et garder l'oeil ! Mais ne vous inquiétez pas car si vous n'arrivez pas à trouver tout les ingrédients des PNJs sont là pour vous donner des 
-indices afin de vous aider.
-Un inventaire est visible afin que le joueur sache ce qu'il a récolté et combien d'ingrédients il lui reste à trouver.
+Il faut bien chercher et garder l'oeil ouvert ! Mais ne vous inquiétez pas car si vous n'arrivez pas à trouver tout les ingrédients des PNJs sont là pour vous donner quelques indices afin de vous aider.
+DE plus, un inventaire est visible afin que le joueur sache ce qu'il a récolté et combien d'ingrédients il lui reste à trouver.
 
 
 ### Planète du Minotaure
@@ -58,3 +57,6 @@ On retrouve sur cette planète un temple romain, une fois à l'intérieur, on pe
 
 ### Planète du "Musée de la Forme et du Mouvement"
 - Greek Low Poly Pack - Lite : https://assetstore.unity.com/packages/3d/environments/historic/greek-low-poly-pack-lite-136606
+
+### Planète Culinaire
+- Village : https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410
