@@ -22,6 +22,13 @@ Nous avons réutilisé la course du TD : il suffit d'utiliser les touches Z, Q, 
 <img src="https://github.com/jordanbenavent/S8_IHM_LaPetitePrincesse/blob/main/La%20petite%20princesse/Assets/Prefab/Emile/cadreCulinaire.png" width="200">
 </p>
 
+Le but du jeu de la planète culinaire consiste à aider le boulanger représenté par le PNJ à cuisinier sa pizza au quatre fromage, ce dernier explique tout cela
+au joueur quand il décide de lui parler.
+Pour cela il faudra collecter des oeufs, de la farine, des tomates ainsi que du fromage qui sont éparpillé un peu partout dans le village ! 
+Il faut bien chercher et garder l'oeil ! Mais ne vous inquiétez pas car si vous n'arrivez pas à trouver tous les ingrédients des PNJ sont là pour vous donner des 
+indices afin de vous aider.
+Un inventaire est visible afin que le joueur sache ce qu'il a récolté et combien d'ingrédients il lui reste à récolter.
+
 
 ### Planète du Minotaure
 <p align="center">
