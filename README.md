@@ -26,13 +26,17 @@ Le but du jeu de la planète culinaire consiste à aider le boulanger représent
 au joueur quand il décide de lui parler.
 Pour cela il faudra collecter des oeufs, de la farine, des tomates ainsi que du fromage qui sont éparpillés un peu partout dans le village ! 
 Il faut bien chercher et garder l'oeil ouvert ! Mais ne vous inquiétez pas car si vous n'arrivez pas à trouver tout les ingrédients des PNJs sont là pour vous donner quelques indices afin de vous aider.
-DE plus, un inventaire est visible afin que le joueur sache ce qu'il a récolté et combien d'ingrédients il lui reste à trouver.
+De plus, un inventaire est visible afin que le joueur sache ce qu'il a récolté et combien d'ingrédients il lui reste à trouver.
 
 
 ### Planète du Minotaure
 <p align="center">
 <img src="https://github.com/jordanbenavent/S8_IHM_LaPetitePrincesse/blob/main/La%20petite%20princesse/Assets/Prefab/Emile/cadreMinautor.png" width="200">
 </p>
+
+Le but du jeu de la planète du Minotaure est de réussire à sortir du labyrinthe et de tuer le boss final, le Minotaure.
+Lors de son arrivée dans le labyrinthe, la princesse arrive dans la salle d'accueil qui est fermée. Elle doit parler au PNJ derrière les tables et celui-ci lui présente l'objectif. Ensuite, la princesse possède des pouvoirs qu'elle peut lancer à l'aide de la touche espace et grâce à cela elle pourra tuer les monstres du labyrinthe et le Minotaure à la fin du labyrinthe.
+Il faut faire preuve d'un bon sens de l'orientation afin de sortir rapidement du labyrinthe ! (Tips : Regardez le nombre de tonneau 😀)
 
 ### Planète des nuages
 <p align="center">
@@ -60,3 +64,8 @@ On retrouve sur cette planète un temple romain, une fois à l'intérieur, on pe
 
 ### Planète "Culinaire"
 - Village : https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410
+
+### Planète du Minotaure
+- Labyrinthe : https://assetstore.unity.com/packages/3d/environments/dungeons/lite-dungeon-pack-low-poly-3d-art-by-gridness-242692
+- Minotaure : https://assetstore.unity.com/packages/3d/characters/humanoids/boss-class-bull-115521
+- Monstres : https://assetstore.unity.com/packages/3d/characters/creatures/elemental-animations-free-227604
