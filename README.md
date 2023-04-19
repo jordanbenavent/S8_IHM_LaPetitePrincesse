@@ -43,6 +43,10 @@ Il faut faire preuve d'un bon sens de l'orientation afin de sortir rapidement du
 <img src="https://github.com/jordanbenavent/S8_IHM_LaPetitePrincesse/blob/main/La%20petite%20princesse/Assets/Prefab/Emile/cadreNuage.png" width="200">
 </p>
 
+Dans cette planète, la princesse est isolé sur un ilôt de nuages. Pour s'en sortir elle va devoir sauter de nuage en nuage jusqu'à obtenir le trophée qui la ramèra sur Terre.
+Dès son premier saut, la princesse commence à rebondir en raison de l'élasticité de chacun des nuages. Le Petite Princesse se doit de monter mais attention à la chute qui lui est fatale.
+A l'instant où la princesse quitte notre champs de vision en tombant, elle est défaite et ne peut que recommencer son ascension du début.
+
 
 ### Planète du "Musée de la Forme et du Mouvement"
 <p align="center">
