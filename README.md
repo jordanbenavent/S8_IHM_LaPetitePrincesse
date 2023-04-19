@@ -70,6 +70,7 @@ On retrouve sur cette planète un temple romain, une fois à l'intérieur, on pe
 
 ### Planète "Culinaire"
 - Village : https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410
+- Music : https://www.youtube.com/watch?v=gg2aY9SVmEA&ab_channel=Bearwithme
 
 ### Planète du Minotaure
 - Labyrinthe : https://assetstore.unity.com/packages/3d/environments/dungeons/lite-dungeon-pack-low-poly-3d-art-by-gridness-242692
