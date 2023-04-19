@@ -55,12 +55,14 @@ On retrouve sur cette planète un temple romain, une fois à l'intérieur, on pe
 ### Menu
 - Ultimate Low Poly Dungeon : https://assetstore.unity.com/packages/3d/environments/dungeons/ultimate-low-poly-dungeon-143535
 - Chateau : fait sur Blender
+- Musique: https://assetstore.unity.com/packages/audio/music/piano-instrumental-music-loops-240221
 
 ### Planètes de "L'arène de l'interaction et de la compétition"
 - Utilisation des ressources du TD Unity
 
 ### Planète du "Musée de la Forme et du Mouvement"
 - Greek Low Poly Pack - Lite : https://assetstore.unity.com/packages/3d/environments/historic/greek-low-poly-pack-lite-136606
+- Musique: https://assetstore.unity.com/packages/audio/music/piano-instrumental-music-loops-240221
 
 ### Planète "Culinaire"
 - Village : https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410
