@@ -4,7 +4,7 @@
 Le but de notre princesse est de gagner tous les 4 trophées dans les 4 différentes planètes pour obtenir l'accès au "Musée de la Forme et du Mouvement".
 
 ### Utilisation
-Retrouvé le .unityproject ici :
+Retrouvé le .unityproject ici : https://github.com/jordanbenavent/S8_IHM_LaPetitePrincesse/blob/main/LaPetitePrincesseExe/La%20petite%20princesse.exe <\br>
 Retrouvé le .exe ici : 
 
 
